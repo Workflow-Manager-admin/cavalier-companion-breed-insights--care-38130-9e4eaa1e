@@ -36,16 +36,20 @@ export class MainContainerComponent {
 
   careTips = [
     {
-      title: 'Grooming',
-      details: 'Brush their silky coat several times a week to prevent matting. Check and clean their ears regularly.'
+      title: 'Grooming 🧴',
+      details: 'Brush the silky coat 3–4 times a week to prevent matting and tangles. Bathe every 4–6 weeks using a gentle dog shampoo. Regularly check and clean their ears to avoid infections, and trim nails as needed.'
     },
     {
-      title: 'Feeding',
-      details: 'Feed a balanced, age-appropriate diet. Monitor treats and meal portions to prevent obesity.'
+      title: 'Feeding 🍗',
+      details: 'Feed a high-quality, age-appropriate diet divided into 2 meals per day. Watch calorie intake, limit treats, and avoid feeding table scraps to help maintain a healthy weight.'
     },
     {
-      title: 'Exercise',
-      details: 'Daily walks and playtime are essential. Cavaliers enjoy gentle exercise and interactive games.'
+      title: 'Exercise 🐾',
+      details: 'Provide daily walks (at least 30 minutes) and plenty of playtime. Cavaliers enjoy interactive games and gentle activities. Ensure safe environments for off-leash play.'
+    },
+    {
+      title: 'General Health ❤️',
+      details: 'Schedule regular vet checkups, keep up with vaccinations and parasite prevention, and practice good dental care (like regular tooth brushing). Monitor for signs of heart or eye issues, which the breed may be prone to.'
     }
   ];
 }
