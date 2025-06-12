@@ -34,22 +34,47 @@ export class MainContainerComponent {
     }
   ];
 
-  careTips = [
+  // Enhanced: Care Tips grouped by category for visual clarity
+  careTipsIntro: string = "Cavalier King Charles Spaniels are loving and adaptable, but like all breeds, they thrive with dedicated care and attention. Here are some essential tips—grouped by category—to help your companion stay happy and healthy:";
+
+  careTipCategories = [
     {
-      title: 'Grooming 🧴',
-      details: 'Brush the silky coat 3–4 times a week to prevent matting and tangles. Bathe every 4–6 weeks using a gentle dog shampoo. Regularly check and clean their ears to avoid infections, and trim nails as needed.'
+      name: 'Grooming',
+      icon: '🧴',
+      tips: [
+        "Brush their silky coat 3–4 times a week to prevent matting and tangles.",
+        "Bathe every 4–6 weeks using a gentle dog shampoo.",
+        "Check and clean ears weekly to avoid infections.",
+        "Trim nails regularly."
+      ]
     },
     {
-      title: 'Feeding 🍗',
-      details: 'Feed a high-quality, age-appropriate diet divided into 2 meals per day. Watch calorie intake, limit treats, and avoid feeding table scraps to help maintain a healthy weight.'
+      name: 'Feeding',
+      icon: '🍗',
+      tips: [
+        "Feed a high-quality, age-appropriate diet, split into 2 meals per day.",
+        "Monitor calorie intake and limit treats to maintain a healthy weight.",
+        "Avoid feeding table scraps."
+      ]
     },
     {
-      title: 'Exercise 🐾',
-      details: 'Provide daily walks (at least 30 minutes) and plenty of playtime. Cavaliers enjoy interactive games and gentle activities. Ensure safe environments for off-leash play.'
+      name: 'Exercise',
+      icon: '🐾',
+      tips: [
+        "Provide daily walks (at least 30 minutes).",
+        "Offer plenty of playtime—Cavaliers enjoy interactive games and gentle activities.",
+        "Ensure secure spaces for safe off-leash play."
+      ]
     },
     {
-      title: 'General Health ❤️',
-      details: 'Schedule regular vet checkups, keep up with vaccinations and parasite prevention, and practice good dental care (like regular tooth brushing). Monitor for signs of heart or eye issues, which the breed may be prone to.'
+      name: 'Health',
+      icon: '❤️',
+      tips: [
+        "Schedule regular veterinary checkups.",
+        "Keep up with vaccinations and parasite prevention.",
+        "Brush their teeth regularly to maintain dental health.",
+        "Monitor for signs of heart or eye conditions common to the breed."
+      ]
     }
   ];
 }

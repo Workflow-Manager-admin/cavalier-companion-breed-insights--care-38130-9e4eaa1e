@@ -9,20 +9,20 @@ The "disableHostCheck" option will not be used because it is not supported by th
 Browser bundles     
 Initial chunk files  | Names            |  Raw size
 polyfills.js         | polyfills        |  90.20 kB | 
-main.js              | main             |  11.01 kB | 
+main.js              | main             |  11.60 kB | 
 styles.css           | styles           |  95 bytes | 
 
-                     | Initial total    | 101.30 kB
+                     | Initial total    | 101.89 kB
 
 
 Server bundles      
 Initial chunk files  | Names            |  Raw size
 polyfills.server.mjs | polyfills.server | 572.91 kB | 
-chunk-BQVGNAFL.mjs   | -                |  11.45 kB | 
+chunk-IHHCGDTX.mjs   | -                |  12.03 kB | 
 server.mjs           | server           |   1.39 kB | 
 main.server.mjs      | main.server      | 800 bytes | 
 
-Application bundle generation complete. [2.223 seconds]
+Application bundle generation complete. [2.186 seconds]
 
 ▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
 
@@ -72,22 +72,16 @@ NG0303: Can't bind to 'ngForOf' since it isn't a known property of 'img' (used i
 NG0303: Can't bind to 'ngForOf' since it isn't a known property of 'li' (used in the '_MainContainerComponent' component template).
 1. If 'li' is an Angular component and it has the 'ngForOf' input, then verify that it is included in the '@Component.imports' of this component.
 2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@Component.schemas' of this component.
-NG0303: Can't bind to 'ngForOf' since it isn't a known property of 'img' (used in the '_MainContainerComponent' component template).
-1. If 'img' is an Angular component and it has the 'ngForOf' input, then verify that it is included in the '@Component.imports' of this component.
-2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@Component.schemas' of this component.
-NG0303: Can't bind to 'ngForOf' since it isn't a known property of 'li' (used in the '_MainContainerComponent' component template).
-1. If 'li' is an Angular component and it has the 'ngForOf' input, then verify that it is included in the '@Component.imports' of this component.
-2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@Component.schemas' of this component.
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
 Browser bundles    
 Initial chunk files | Names       |  Raw size
-main.js             | main        |  11.60 kB | 
+main.js             | main        |  12.12 kB | 
 
 
 Server bundles     
 Initial chunk files | Names       |  Raw size
-chunk-IHHCGDTX.mjs  | -           |  12.03 kB | 
+chunk-DTV66XSW.mjs  | -           |  12.56 kB | 
 server.mjs          | server      |   1.39 kB | 
 main.server.mjs     | main.server | 800 bytes | 
 
@@ -120,15 +114,58 @@ Application bundle generation complete. [0.356 seconds]
 
 
 Page reload sent to client(s).
-NG0303: Can't bind to 'ngForOf' since it isn't a known property of 'img' (used in the '_MainContainerComponent' component template).
-1. If 'img' is an Angular component and it has the 'ngForOf' input, then verify that it is included in the '@Component.imports' of this component.
-2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@Component.schemas' of this component.
-NG0303: Can't bind to 'ngForOf' since it isn't a known property of 'li' (used in the '_MainContainerComponent' component template).
-1. If 'li' is an Angular component and it has the 'ngForOf' input, then verify that it is included in the '@Component.imports' of this component.
-2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@Component.schemas' of this component.
-NG0303: Can't bind to 'ngForOf' since it isn't a known property of 'img' (used in the '_MainContainerComponent' component template).
-1. If 'img' is an Angular component and it has the 'ngForOf' input, then verify that it is included in the '@Component.imports' of this component.
-2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@Component.schemas' of this component.
-NG0303: Can't bind to 'ngForOf' since it isn't a known property of 'li' (used in the '_MainContainerComponent' component template).
-1. If 'li' is an Angular component and it has the 'ngForOf' input, then verify that it is included in the '@Component.imports' of this component.
-2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@Component.schemas' of this component.
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names       |  Raw size
+main.js             | main        |  13.32 kB | 
+
+
+Server bundles     
+Initial chunk files | Names       |  Raw size
+chunk-Z7W7DVLT.mjs  | -           |  13.76 kB | 
+server.mjs          | server      |   1.39 kB | 
+main.server.mjs     | main.server | 800 bytes | 
+
+Application bundle generation complete. [0.168 seconds]
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/main-container.component.html:32:9:
+      32 │         *ngFor="let img of imageGallery"
+         ╵          ~~~~~
+
+  Error occurs in the template of component MainContainerComponent.
+
+    src/app/main-container.component.ts:6:15:
+      6 │   templateUrl: './main-container.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/main-container.component.html:46:10:
+      46 │     <div *ngFor="let category of careTipCategories" style="margin-...
+         ╵           ~~~~~
+
+  Error occurs in the template of component MainContainerComponent.
+
+    src/app/main-container.component.ts:6:15:
+      6 │   templateUrl: './main-container.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/main-container.component.html:52:13:
+      52 │         <li *ngFor="let tip of category.tips">{{ tip }}</li>
+         ╵              ~~~~~
+
+  Error occurs in the template of component MainContainerComponent.
+
+    src/app/main-container.component.ts:6:15:
+      6 │   templateUrl: './main-container.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Page reload sent to client(s).

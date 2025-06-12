@@ -42,10 +42,15 @@
 
   <section class="section-care-tips">
     <h2 class="section-heading">Care Tips</h2>
-    <ul class="care-tip-list">
-      <li *ngFor="let tip of careTips">
-        <strong>{{ tip.title }}:</strong> {{ tip.details }}
-      </li>
-    </ul>
+    <p class="desc" style="margin-bottom: 1.1rem;">{{ careTipsIntro }}</p>
+    <div *ngFor="let category of careTipCategories" style="margin-bottom: 1.7rem;">
+      <div style="display:flex; align-items:center; margin-bottom:0.4rem;">
+        <span style="font-size:1.7rem; margin-right:0.57rem;">{{ category.icon }}</span>
+        <h3 style="margin:0; font-size:1.13rem; color:var(--text-section); font-weight:600;">{{ category.name }}</h3>
+      </div>
+      <ul class="care-tip-list" style="margin-top:0.37rem;">
+        <li *ngFor="let tip of category.tips">{{ tip }}</li>
+      </ul>
+    </div>
   </section>
 </main>
