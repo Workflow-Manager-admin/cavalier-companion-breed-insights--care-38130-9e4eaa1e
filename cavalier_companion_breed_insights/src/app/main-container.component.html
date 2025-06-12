@@ -1,0 +1,51 @@
+<main class="main-cc-breed-container">
+  <header class="header">
+    <h1 class="breed-title">Cavalier Companion: <span>Breed Insights & Care</span></h1>
+  </header>
+
+  <section class="hero-section">
+    <img 
+      src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=900&q=80" 
+      alt="Cavalier King Charles Spaniel hero"
+      class="hero-img"
+      loading="eager"
+    />
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="section-overview">
+    <h2 class="section-heading">Breed Overview</h2>
+    <p class="desc">{{ breedOverview.description }}</p>
+    <ul class="overview-list">
+      <li><strong>Origin:</strong> {{ breedOverview.origin }}</li>
+      <li><strong>Temperament:</strong> {{ breedOverview.temperament }}</li>
+    </ul>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="section-gallery">
+    <h2 class="section-heading">Image Gallery</h2>
+    <div class="gallery">
+      <img 
+        *ngFor="let img of imageGallery" 
+        [src]="img.url"
+        [alt]="img.alt"
+        class="gallery-img"
+        loading="lazy"
+      />
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="section-care-tips">
+    <h2 class="section-heading">Care Tips</h2>
+    <ul class="care-tip-list">
+      <li *ngFor="let tip of careTips">
+        <strong>{{ tip.title }}:</strong> {{ tip.details }}
+      </li>
+    </ul>
+  </section>
+</main>
